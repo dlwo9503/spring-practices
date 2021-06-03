@@ -8,8 +8,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.douzone.emaillist.vo.EmaillistVo;
 
+@Repository
 public class EmaillistRepository {
 	public Boolean insert(EmaillistVo vo) {
 
