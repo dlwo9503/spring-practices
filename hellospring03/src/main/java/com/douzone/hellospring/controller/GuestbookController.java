@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @Controller
-@RequestMapping("/guestbook/*") // 쓸때는 *에 list가 위치함
+@RequestMapping("/guestbook/*") // 쓸때는 *에 list나 delete가 위치함
 public class GuestbookController {
 	@ResponseBody
 	@RequestMapping // url을 붙이지 않음, 위에 붙임
