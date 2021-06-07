@@ -33,7 +33,7 @@ public class UserController {
 	public String update(@RequestParam("n") String name) { // 이렇게 하면 n이라는 이름의 변수로 받아도 name로 사용 가능
 		/**
 		 * 만일 n이라는 이름의 파라미터가 없는 경우
-		 * 400 Bad Request 에러가 발생한다. 
+		 * 400 Bad Request 에러가 발생한다.
 		 */
 		System.out.println(name);
 		return "UserController.update()";
