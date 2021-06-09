@@ -48,5 +48,6 @@
 		<module>guestbook03</module>
 		<module>mysite03</module>
 		<module>logex</module>
+		<module>aoptest</module>
 	</modules>
 </project>
