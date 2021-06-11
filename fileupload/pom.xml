@@ -9,35 +9,34 @@
 	</parent>
 	<artifactId>fileupload</artifactId>
 	<packaging>war</packaging>
-
+	
 	<properties>
-		<org.springframework-version>4.3.4.RELEASE</org.springframework-version>
+	     <org.springframework-version>4.3.4.RELEASE</org.springframework-version>
 	</properties>
-
-
+	
 	<dependencies>
-		<!--Spring Context(Container) -->
+		<!-- Spring Context(Container) -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
+		
 		<!-- Spring Web MVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
-		<!-- Spring Web(DispatcherServlet, ContextLoadListener, EncodingFilter -->
+	
+		<!-- Spring Web(DispatcherServlet, ContextLoadListener, EncodingFilter) -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 		
-		<!-- Common Fileupload -->
+		<!-- Common Fileupload -->	
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -47,15 +46,15 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>1.4</version>
-		</dependency>
-
+		</dependency>	
+	
 		<!-- jstl -->
 		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
 		</dependency>
-		
+			
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -68,10 +67,9 @@
 			<artifactId>jsp-api</artifactId>
 			<version>2.0</version>
 			<scope>provided</scope>
-		</dependency>
-
+		</dependency>	
 	</dependencies>
-
+	
 	<build>
 		<finalName>fileupload</finalName>
 		<plugins>
@@ -83,7 +81,7 @@
 					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 					<failOnMissingWebXml>true</failOnMissingWebXml>
 				</configuration>
-			</plugin>
+			</plugin>		
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
@@ -93,7 +91,7 @@
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+			</plugin>		
+		</plugins>		
+	</build>	
 </project>

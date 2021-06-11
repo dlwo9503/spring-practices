@@ -10,7 +10,7 @@
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- <mvc:annotation-driven /> --> <!-- 일단 오류떠서 막아놓음 -->
+	<mvc:annotation-driven /> <!-- 일단 오류떠서 막아놓음 -->
 	
 	<!-- Multipard Resolver --> <!-- 멀티파트 리졸버 -->
 	<bean id="multipartResolver" 
@@ -22,6 +22,9 @@
 		<!-- defaultEncoding -->
 		<property name="defaultEncoding" value="utf-8" />
 	</bean>	
+	
+	<!-- mvc resources mapping -->
+	<mvc:resources location="file:/uploads-mysite" mapping="/images/**" /> <!-- 맥은 경로 다를 수도 있음 -->
 	
 
 	<context:annotation-config /> <!-- 이거 하나가 매핑과 컨트롤러를 다 자동으로 해줌 -->
