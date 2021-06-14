@@ -1,5 +1,8 @@
 package com.douzone.container.soundsystem;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HighSchoolRapper2Final implements CompactDisc {
 
 	private String title = "붕붕";
