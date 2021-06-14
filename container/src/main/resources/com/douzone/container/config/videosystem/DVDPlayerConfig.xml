@@ -107,5 +107,26 @@
 			p:title="Avengers Expansion Pack3"
 			p:studio="MARVEL"
 			p:actors-ref="actorList" />
+			
+		<!-- 11. 생성자를 통한 빈 주입 1 -->
+		<bean id="dvdPlayer1" class="com.douzone.container.videosystem.DVDPlayer">
+			<constructor-arg ref="ironMan" />
+		</bean>
+		
+		<!-- 12. 생성자를 통한 빈 주입 2 : c-namespace의 argument name을 사용하는 방법(Spring 3.x 부터 지원) -->
+		<bean id="dvdPlayer2" class="com.douzone.container.videosystem.DVDPlayer" 
+			c:dvd-ref="ironMan"/>
+			
+		<!-- 13. 생성자를 통한 빈 주입 3 : c-namespace의 argument index를 사용하는 방법(Spring 3.x 부터 지원) -->
+		<bean id="dvdPlayer3" class="com.douzone.container.videosystem.DVDPlayer" 
+			c:_0-ref="ironMan"/>
+			
+		<!-- 14. property를 통한 빈 주입 1 -->
+		<bean id="dvdPlayer4" class="com.douzone.container.videosystem.DVDPlayer">
+			<property name="dvd" ref="avengersDirectorEdition" />
+		</bean> 
+			
+		<!-- 15. property를 통한 빈 주입 2 p:namespace 사용 -->
+		<bean id="dvdPlayer5" class="com.douzone.container.videosystem.DVDPlayer" p:dvd-ref="avengersDirectorEdition" />
 		
 </beans>
