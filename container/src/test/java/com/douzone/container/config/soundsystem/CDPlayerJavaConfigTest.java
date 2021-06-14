@@ -13,7 +13,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.douzone.container.soundsystem.CDPlayer;
 
+// JUnit 확장하는 어노테이션
 @RunWith(SpringJUnit4ClassRunner.class)
+// Spring Bean 메타 설정 파일의 위치를 지정
 @ContextConfiguration(classes=CDPlayerConfig.class)
 public class CDPlayerJavaConfigTest {
 
@@ -22,6 +24,7 @@ public class CDPlayerJavaConfigTest {
 	@Autowired
 	private CDPlayer cdPlayer;
 	
+	// 단위 테스트를 선언
 	@Test
 	public void testCDPlayerNotNull() {
 		assertNotNull(cdPlayer);
