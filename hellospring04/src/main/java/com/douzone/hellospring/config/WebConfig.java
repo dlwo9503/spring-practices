@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.douzone.hellospring.controller")
+@ComponentScan(basePackages = "com.douzone.hellospring.controller")
 public class WebConfig {
 	
 }
