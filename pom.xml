@@ -49,5 +49,6 @@
 		<module>aoptest</module>
 		<module>fileupload</module>
 		<module>container</module>
+		<module>hellospring04</module>
 	</modules>
 </project>
