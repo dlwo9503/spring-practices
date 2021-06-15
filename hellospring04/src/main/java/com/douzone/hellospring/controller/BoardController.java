@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @RequestMapping
  * 메소드 단독 매핑
- * @author jaes
  *
  */
 
