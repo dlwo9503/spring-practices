@@ -15,7 +15,7 @@
 		</init-param>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>com.douzone.gellospring.config.WebConfig</param-value>
+			<param-value>com.douzone.hellospring.config.WebConfig</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>
